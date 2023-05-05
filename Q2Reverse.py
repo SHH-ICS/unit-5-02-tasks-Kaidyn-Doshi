@@ -1,5 +1,3 @@
-# Create a program that will accept a word and output the word one letter at a time in reverse.
-
 while True: 
     word = input("Enter a word or type quit to exit: ")
     if word == "quit":

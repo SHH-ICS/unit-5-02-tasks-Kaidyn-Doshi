@@ -1,7 +1,9 @@
-# Create a program that will prompt the user for a word, and return a 'word triangle'. For example, if the user types in the word "PYTHON", your program will output:
-# P
-# PY
-# PYT
-# PYTH
-# PYTHO
-# PYTHON
+while True: 
+    word = input("Enter a word or type quit to exit: ")
+    if word == "quit":
+        break
+    if word.isalpha() and " " not in word:
+      for i in range(1, len(word)+1): 
+        print(word[:i])
+    else: 
+      print("Invalid input. Please enter a single word with only letters.") 
